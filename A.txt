@@ -1,0 +1,15 @@
+currently working on ehs-9297 pr comments , dave has added a comment 
+that requirea to create a new employee window for multijob and 
+i would continue working on it today and try to close it by today. 
+
+utilizes for single job
+EmployeeRecord.js, possibly hiding some elements of it like the 
+'Check for existing record' button,
+================================================
+I don't think we gain anything by implementing both forms in the same window.
+If anything it just makes it more complicated. I would probably implement 
+the multijob window on its own, and then create another window that utilizes 
+EmployeeRecord.js, possibly hiding some elements of it like the 
+'Check for existing record' button, which would look something like:
+
+form.down('button').hide();
